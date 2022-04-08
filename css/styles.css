@@ -1,0 +1,576 @@
+
+body
+{
+    margin: 0;
+    background-image: url("../Images/backgroundImg.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.homescreen
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#homescreentext
+{
+    text-align: center;
+    color: white;
+    font-family: "Dosis";
+    font-size: 30px;
+}
+
+span.name
+{
+    color:red;
+    font-weight: bold;
+}
+
+#mainpagebuttons button
+{
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(49, 49, 122);
+    color: white;
+    font-family: "Dosis";
+    font-weight: bold;
+    transition: .5s;
+}
+#mainpagebuttons button:hover
+{
+    transform: scale(1.2);
+}
+
+.homescreen img
+{
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#homescreensocials button
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+#homescreensocials button:hover
+{
+    transform: scale(1.5);
+}
+
+header
+{
+    background-color: rgba(9,23,31,255);
+    padding: 20px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    color: white;
+    font-family: "Dosis";
+    font-size: 25px;
+    text-shadow: 2px 2px 1px darkblue;
+}
+
+.pagebuttons
+{
+    float: right;
+}
+
+.pagebuttons button
+{
+    font-family: "Dosis";
+    font-size: 15px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px white;
+    padding: 10px;
+    margin-right: 5px;
+    background-color: rgb(49, 49, 122);
+    transition: .12s;
+}
+
+.pagebuttons button:hover
+{
+    transform: scale(1.2);
+}
+
+.AboutMeSection
+{
+    text-align: center;
+    height: 100vh;
+    color: white;
+    font-family: "Dosis";
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.Gallery
+{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 50s infinite linear;
+}
+
+.Gallery figure
+{
+    display: block;
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+
+}
+
+.Gallery figure:nth-child(1) {transform: rotateY(0deg) translateZ(500px);}
+.Gallery figure:nth-child(2) {transform: rotateY(90deg) translateZ(500px);}
+.Gallery figure:nth-child(3) {transform: rotateY(180deg) translateZ(500px);}
+.Gallery figure:nth-child(4) {transform: rotateY(270deg) translateZ(500px);}
+
+.Gallery img
+{
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 1000px;
+}
+
+.Gallery img:hover
+{
+    filter: grayscale(0);
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+h1
+{
+    margin: 0;
+    font-size: 50px;
+}
+
+.SkillsSection
+{
+    height: 100vh;
+    color: white;
+    font-family: "Dosis";
+    border: 3px solid gray;
+    margin: 50px;
+    box-shadow: 0px 10px 10px black;
+}
+
+h2
+{
+    font-size: 40px;
+    background-color: rgba(0,0,0,.2);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.skillsColumn
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 90%;
+    
+}
+
+.skillsColumn ul
+{
+    position: relative;
+    background-color: rgba(49, 49, 122, .2);
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.skillsColumn ul:hover
+{
+    background-color:rgba(49, 49, 122, 1);;
+}
+
+.skillsColumn li
+{
+    height: 10%;
+}
+
+.plcolumn
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 90%;
+    
+}
+
+.plcolumn ul
+{
+    position: relative;
+    background-color: rgba(49, 49, 122, .2);
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.plcolumn ul:hover
+{
+    background-color:rgba(49, 49, 122, 1);;
+}
+
+.plcolumn li
+{
+    height: 10%;
+}
+
+.coursecolumn
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 90%;
+    
+}
+
+.coursecolumn ul
+{
+    position: relative;
+    background-color: rgba(49, 49, 122, .2);
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.coursecolumn ul:hover
+{
+    background-color:rgba(49, 49, 122, 1);;
+}
+
+.coursecolumn li
+{
+    height: 10%;
+}
+
+
+.ProjectsSection
+{
+    font-family: "Dosis";
+    margin-bottom: 50px;
+}
+
+h3
+{
+    margin: 0px;
+    font-size: 50px;
+    font-family: 'Dosis';
+    color: white;
+    text-align: center;
+}
+
+.TopProjectSection
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainGame
+{
+    height: 75%;
+    width: 50%;
+    border-radius: 100px;
+    box-shadow: 10px 10px 8px black;
+    background-image: url("../Images/leafladimage2.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+#mainGame:hover
+{
+    transform: scale(1.25);
+}
+
+#mainGameTitle
+{ 
+    font-size: 3vw;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 25px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#mainGameText
+{
+    font-size: 1vw;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.GameCollection
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    height: 100vh;
+}
+
+h4
+{
+    margin: 0;
+    font-size: 2.5vw;
+    text-shadow: 3px 3px black;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 25px;
+    margin-right: 25%;
+    margin-left: 25%;
+    
+}
+
+.GameCollection p
+{
+    color: white;
+    position: relative;
+    top: 20%;
+    font-size: 2vh;
+    background-color:  rgba(0,0,0,.5);
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.GameCollection p#visible {
+    overflow: visible;
+}
+.GameCollection p#auto {
+    overflow: auto;
+}
+.GameCollection p#scroll {
+    overflow: scroll;
+}
+.GameCollection p#hidden {
+    overflow: hidden;
+}
+
+#game2
+{
+    height: 100%;
+    margin-left: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px black;
+    background-image: url("../Images/Remembermepic2.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition:  .2s;
+}
+
+#game2:hover
+{
+    transform: scale(1.2);
+}
+
+#game3
+{
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px black;
+    background-image: url("../Images/PN3.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+#game3:hover
+{
+    transform: scale(1.2);
+}
+
+#game4
+{
+    height: 100%;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 8px black;
+    background-image: url("../Images/AggaryPic2.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition: .2s;
+    
+}
+
+#game4:hover
+{
+    transform: scale(1.2);
+}
+
+#game5
+{
+    height: 100%;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 8px black;
+    background-image: url("../Images/CookieRageImage.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+#game5:hover
+{
+    transform: scale(1.2);
+}
+
+h5
+{
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Unna';
+    color: white;
+    text-align: center;
+}
+
+.ContactSection
+{
+    text-align:center;
+    color: white;
+    font-family: "Unna";
+    height: 70vh;
+    padding-top: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer
+{
+    background-color: rgba(54,76,91,255);
+    z-index: 1;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer button
+{
+    margin-right: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+footer button:hover
+{
+    transform: scale(1.5);
+}
+
+#twitterbutton
+{
+    background-image: url("../Images/twitterpng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
+
+#facebookbutton
+{
+    background-image: url("../Images/facebookpng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
+
+#instagrambutton
+{
+    background-image: url("../Images/instagrampng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
+
+#linkedinbutton
+{
+    background-image: url("../Images/linkedinpng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
+
+#githubbutton
+{
+    background-image: url("../Images/githubpng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
+
+#itchiobutton
+{
+    background-image: url("../Images/itchiopng.png");
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: rgba(0,0,0,.0);
+}
