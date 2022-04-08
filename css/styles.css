@@ -9,6 +9,58 @@ body
     background-attachment:fixed;
 }
 
+/*-------------------------------------Header----------------------------------*/
+
+header
+{
+    background-color: rgba(9,23,31,1);
+    height: 75px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#headername
+{
+    float: left;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: "Dosis";
+    font-size: 25px;
+    text-shadow: 2px 2px 1px darkblue;
+    font-weight: bold;
+}
+
+.pagebuttons
+{
+    float: right;
+    position: relative;
+    margin-right: 50px;
+}
+
+.pagebuttons button
+{
+    font-family: "Dosis";
+    padding: 22px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(9,23,31,1);
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.pagebuttons button:hover
+{
+    transform:translateY(20px);
+    color: #8FCDFF;
+    opacity: .8;
+    cursor:pointer;
+}
+
+/*--------------------------------Home Screen----------------------------*/
+
 .homescreen
 {
     display: flex;
@@ -30,19 +82,20 @@ body
 {
     font-size: 50px;
     font-weight: bold;
+    text-shadow: 0 0 10px #6FB7F2;
     margin-bottom: 0;
 }
 
 span.name
 {
     color: #6FB7F2;
-    text-shadow: 0 0 10px #6FB7F2;
+    text-shadow: 0 0 10px ;
     font-weight: bold;
 }
 
 #mainpagebuttons button
 {
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 20px;
     background-color: #F2BF6F;
     color: #A6762B;
@@ -50,6 +103,7 @@ span.name
     font-family: "Dosis";
     font-weight: bold;
     transition: .5s;
+    box-shadow: 0px 0px 6px white;
 }
 #mainpagebuttons button:hover
 {
@@ -62,6 +116,7 @@ span.name
     border-radius: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 5px solid white;
 }
 
 #homescreensocials button
@@ -77,41 +132,7 @@ span.name
     transform: scale(1.5);
 }
 
-header
-{
-    background-color: rgba(9,23,31,255);
-    padding: 20px;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    color: white;
-    font-family: "Dosis";
-    font-size: 25px;
-    text-shadow: 2px 2px 1px darkblue;
-}
-
-.pagebuttons
-{
-    float: right;
-}
-
-.pagebuttons button
-{
-    font-family: "Dosis";
-    font-size: 15px;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px white;
-    padding: 10px;
-    margin-right: 5px;
-    background-color: rgb(49, 49, 122);
-    transition: .12s;
-}
-
-.pagebuttons button:hover
-{
-    transform: scale(1.2);
-}
+/*--------------------------About Me Section-----------------------------------------*/
 
 .AboutMeSection
 {
@@ -120,16 +141,36 @@ header
     color: white;
     font-family: "Dosis";
     font-size: 20px;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color:#6FB7F2;
+    text-shadow: 0 0 50px #6FB7F2;
+}
+
+.AboutMeSection p
+{
+    color:white;
+    font-size: 25px;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .Gallery
 {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 600px;
+    margin: 0;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform-style: preserve-3d;
-    animation: rotation 50s infinite linear;
+    animation: rotation 30s infinite linear;
 }
 
 .Gallery figure
@@ -152,7 +193,7 @@ header
     filter: grayscale(1);
     cursor: pointer;
     transition: all .5s ease;
-    width: 1000px;
+    width: 750px;
 }
 
 .Gallery img:hover
@@ -168,26 +209,25 @@ header
     }
 }
 
-h1
-{
-    margin: 0;
-    font-size: 50px;
-}
+/*-------------------------------------------------Skills Section----------------------------------------*/
+
 
 .SkillsSection
 {
     height: 100vh;
-    color: white;
     font-family: "Dosis";
     border: 3px solid gray;
     margin: 50px;
+    color: white;
     box-shadow: 0px 10px 10px black;
 }
 
 h2
 {
     font-size: 40px;
-    background-color: rgba(0,0,0,.2);
+    color: #6FB7F2;
+    font-weight: bold;
+    text-shadow: 0 0 8px ;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0;
@@ -293,15 +333,18 @@ h2
 }
 
 
+/*-----------------------------------------------------Project Section----------------------------------*/
+
 .ProjectsSection
 {
     font-family: "Dosis";
     margin-bottom: 50px;
+
 }
 
 h3
 {
-    margin: 0px;
+    margin: 0;
     font-size: 50px;
     font-family: 'Dosis';
     color: white;
@@ -310,7 +353,8 @@ h3
 
 .TopProjectSection
 {
-    height: 100vh;
+    height: 900px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,6 +465,7 @@ h4
 #game2:hover
 {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #game3
@@ -440,6 +485,7 @@ h4
 #game3:hover
 {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #game4
@@ -460,6 +506,7 @@ h4
 #game4:hover
 {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #game5
@@ -480,6 +527,7 @@ h4
 #game5:hover
 {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 h5
@@ -490,6 +538,8 @@ h5
     color: white;
     text-align: center;
 }
+
+/*----------------------------------------Contact Section--------------------------------------*/
 
 .ContactSection
 {
