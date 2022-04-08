@@ -21,14 +21,22 @@ body
 #homescreentext
 {
     text-align: center;
-    color: white;
+    color: #8FCDFF;
     font-family: "Dosis";
     font-size: 30px;
 }
 
+#hwtext
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 span.name
 {
-    color:red;
+    color: #6FB7F2;
+    text-shadow: 0 0 10px #6FB7F2;
     font-weight: bold;
 }
 
@@ -36,8 +44,9 @@ span.name
 {
     border-radius: 5px;
     padding: 20px;
-    background-color: rgb(49, 49, 122);
-    color: white;
+    background-color: #F2BF6F;
+    color: #A6762B;
+    font-size: 20px;
     font-family: "Dosis";
     font-weight: bold;
     transition: .5s;
