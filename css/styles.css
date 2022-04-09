@@ -150,6 +150,7 @@ h1
     font-weight: bold;
     color:#6FB7F2;
     text-shadow: 0 0 50px #6FB7F2;
+    animation: 3s ease-out 0s 1 slideInFromRight;
 }
 
 .AboutMeSection p
@@ -158,6 +159,25 @@ h1
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(0);
+    }
 }
 
 .Gallery
@@ -547,11 +567,26 @@ h5
 {
     text-align:center;
     color: white;
-    font-family: "Unna";
-    height: 70vh;
-    padding-top: 250px;
+    font-family: "Dosis";
+    font-size: 20px;
+    height: 50vh;
+    padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+#submitButton
+{
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#messagebox
+{
+    height: 100px;
+    width: 300px;
+    overflow-wrap: normal;
 }
 
 /*-------------------------------------------Footer---------------------------------------------*/

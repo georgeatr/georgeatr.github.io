@@ -3,40 +3,66 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Jorge Torres Reyes</title>
-    <link rel="stylesheet" href="css/finalproject.css">
+    <title>Contact - Jorge Torres Reyes</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Merriweather:wght@300&family=Roboto&family=Unna&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
 </head>
 
 <body>
     <header>
         <div class="navbar">
-            Jorge Alberto Torres Reyes
+            <span id="headername">Jorge Alberto Torres Reyes</span>
             <div class="pagebuttons">
                 <button onclick="window.location.href = './index.html'">Home</button> 
                 <button onclick="window.location.href = './aboutMe.html'">About Me</button> 
                 <button onclick="window.location.href = './skills.html';">Skills</button>
                 <button onclick="window.location.href = './projects.html';">Projects</button>
-                <button onclick="window.location.href = './contact.php';">Contact</button>
+                <button onclick="window.location.href = './contact.html';">Contact</button>
             </div>
         </div> 
     </header>
 
     <div class="ContactSection" id="contactmelink">
-        <h1>Contact Me</h1>
-        <div class="informationInput">
-            <p>Name:</p>
-            <input type="text" name="Name"/>
-            <p>Email:</p>
-            <input type="text" name="email"/>
-            <p>Phone Number:</p>
-            <input type="text" name="phone number"/>
-            <p>Messsage:</p>
-            <input type="text" name="Message"/>
-        </div>
+        <h2>Contact Me</h2>
+        <form method="post" name="myemailform" action="contact.php">
+        <p>Enter Name:</p>
+        <input type="text" name="name">
+        <p>Enter Email Address:</p>
+        <input type="text" name="email">
+        <p>Enter Message:</p>
+        <textarea name="message"></textarea>
+        <div><input type="submit" value="Send Form"></div>
+        </form>
+        <!-- Personal Webpage. By: Jorge Torres
+        <?php
+            /*if(isset($_POST)){
+                
+                $name = $_POST['name'];
+                $visitor_email = $_POST['email'];
+                $message = $_POST['message'];
+
+                $email_from = $visitor_email;
+
+                $email_subject = "New Form submission";
+
+                $email_body = "You have received a new message from the user $name.\n".
+                                "Here is the message:\n $message".
+
+                $to = "georgeatr972@gmail.com";
+
+                $headers = "From: $email_from \r\n";
+                            
+                $headers .= "Reply-To: $visitor_email \r\n";
+                            
+                mail($to,$email_subject,$email_body,$headers);
+            }
+            */
+        ?>
+        -->
     </div>
 
     <footer>
